@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Павел Лапунов](https://up.htmlacademy.ru/htmlcss/26/user/355347).
-* Наставник: [Илья "Гуру" Туров] (https://htmlacademy.ru/profile/turov).
+* Наставник: [Илья "Гуру" Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
