@@ -5,58 +5,126 @@
     <title>Document</title>
 </head>
 <body>
-   <header class="main-header">
-        <nav class="main-navigation">
-            <a href="index.html">
+   <header class="header">
+       <a href="index.html">
                 <img src="" width="50" height="50" alt="Логотип Nerds">
             </a>
+        <nav class="navigation">
             <ul>
                 <li><a href="">Студия</a></li>
                 <li><a href="">Клиенты</a></li>
                 <li><a href="#">Магазин</a></li>
                 <li><a href="">Контакты</a></li>
+                <li><a href="">Корзина</a></li>
             </ul>
-            <button type="button">Корзина</button>
         </nav>
     </header>
     <main>
         <h1>Магазин готовых шаблонов</h1>
         <form action="#" method="post">
-            <span>Сетка:</span>
-            <label>
-                <input type="radio" value="" name="" checked>
-                Адаптивная
-            </label>
-            <label>
-                <input type="radio" value="" name="">
-                Фиксированная
-            </label>
-            <label>
-                <input type="radio" value="" name="">
-                Резиновая
-            </label>
-            <span>Особенности:</span>
-            <input type="checkbox">
-            <label for="">Слайдер</label>
-            <input type="checkbox">
-            <label for="">Блок преимуществ</label>
-            <input type="checkbox">
-            <label for="">Новости</label>
-            <input type="checkbox">
-            <label for="">Галерея</label>
-            <input type="checkbox">
-            <label for="">Корзина</label>
-            <input type="submit">
+           <fieldset>
+               <legend>Стоимость:</legend>
+               <input type="range">
+               <label for="">
+                   От <input type="text" value="0">
+               </label>
+               <label for="">
+                   До <input type="text" value="15 000">
+               </label>
+           </fieldset>
+           <fieldset>
+               <legend>Сетка:</legend>
+                <label>
+                    <input type="radio" value="" name="" checked>
+                    Адаптивная
+                </label>
+                <label>
+                    <input type="radio" value="" name="">
+                    Фиксированная
+                </label>
+                <label>
+                    <input type="radio" value="" name="">
+                    Резиновая
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Особенности:</legend>
+                <input type="checkbox">
+                <label for="">Слайдер</label>
+                <input type="checkbox">
+                <label for="">Блок преимуществ</label>
+                <input type="checkbox">
+                <label for="">Новости</label>
+                <input type="checkbox">
+                <label for="">Галерея</label>
+                <input type="checkbox">
+                <label for="">Корзина</label>
+            </fieldset>
+            <input type="submit" value="Показать">
         </form>
+        <div>
+            <b>Сортировать:</b>
+            <ul>
+                <li><a href="">По цене</a></li>
+                <li><a href="">По типу</a></li>
+                <li><a href="">По названию</a></li>
+            </ul>
+            <ul>
+                <li><a href="">&#9660;</a></li>
+                <li><a href="">&#9650;</a></li>
+            </ul>
+        </div>
         <section>
            <h2>Шаблоны (скрытый заголовок)</h2>
             <ul>
-                <li><a href=""><img src="" alt="Сайт Sedona"></a></li>
-                <li><a href=""><img src="" alt="Сайт Pink"></a></li>
-                <li><a href=""><img src="" alt="Сайт Borodinsky"></a></li>
-                <li><a href=""><img src="" alt="Сайт Mishka"></a></li>
-                <li><a href=""><img src="" alt="Сайт A+"></a></li>
-                <li><a href=""><img src="" alt="Сайт Кваст"></a></li>
+                <li>
+                    <a href=""><img src="" alt="Сайт Sedona"></a>
+                    <div>
+                        <h3><a href="#">Sedona</a></h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt="Сайт Pink"></a>
+                    <div>
+                        <h3><a href="#">Pink app</a></h3>
+                        <p>Продуктовый лендинг приложения для iOS и Android</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt="Сайт Borodinsky"></a>
+                    <div>
+                        <h3><a href="#">Barbershop</a></h3>
+                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt="Сайт Mishka"></a>
+                    <div>
+                        <h3><a href="#">Mishka</a></h3>
+                        <p>Интернет-магазин вязаных игрушек</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt="Сайт A+"></a>
+                    <div>
+                        <h3><a href="#">A plus</a></h3>
+                        <p>Лендинг курсов повышения квалификации</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
+                <li>
+                    <a href=""><img src="" alt="Сайт Кваст"></a>
+                    <div>
+                        <h3><a href="#">Кваст</a></h3>
+                        <p>Промо-сайт производителя крафтового кваса</p>
+                        <a href="#">9 900 РУБ.</a>
+                    </div>
+                </li>
             </ul>
         </section>
         <ul>
@@ -67,14 +135,11 @@
         </ul>
     </main>
     <footer>
-        <img src="" width="50" height="50" alt="Здесь будет карта">
-        <div> 
-            <p>
-                <b>NЁRDS DESIGN STUDIO</b><br>
-                191186, Санкт-Петербург,<br> 
-                ул. Б. Конюшенная, д. 19/8<br><br>
-                тел. +7 (812) 275-75-75
-            </p>
+        <div>
+            <h2>NЁRDS DESIGN STUDIO</h2>
+            <address>191186, Санкт-Петербург,<br> 
+            ул. Б. Конюшенная, д. 19/8</address>
+            <span>тел. +7 (812) 275-75-75</span>
             <a href="#">Напишите нам</a>
         </div>
         <div>
@@ -83,9 +148,7 @@
                 <li><a href="#"><img src="" alt="Фэйсбук"></a></li>
                 <li><a href="#"><img src="" alt="Инстаграм"></a></li>
             </ul>
-        </div>
-        <div>
-            <p>Давайте дружить, это выгодно!</p>
+            <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
