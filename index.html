@@ -3,46 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
        <a href="#">
                 <img src="img/logo.png" width="160" height="65" alt="Логотип Nerds">
-            </a>
+        </a>
         <nav class="navigation">
             <ul>
                 <li><a href="">Студия</a></li>
                 <li><a href="">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="">Контакты</a></li>
-                <li><a href=""><img src="img/cart-icon.svg" alt="">Корзина</a></li>
+                <li><a href=""><img src="img/cart-icon.svg" alt="Логотип корзины">Корзина</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Скрытый главный заголовок</h1>
+        <h1 class="visually-hidden">Скрытый главный заголовок</h1>
         <div class="slider">
             <div class="slide-1">
-               <img src="img/slide1.png" width="698" height="413" alt="">
+               <img src="img/slide1.png" width="698" height="413" alt="Изображение на первом слайде">
                 <b>Долго, дорого, скурпулезно.</b>
                 <p>Математически выверенный дизайн<br>для вашего сайта</p>
                 <a href="#">Узнать больше</a>
             </div>
             <div class="slide-2">
-               <img src="img/slide2.png" width="663" height="430" alt="">
+               <img src="img/slide2.png" width="663" height="430" alt="Изображение на втором слайде">
                 <b>Любим математику как никто другой</b>
                 <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 <a href="#">Узнать больше</a>
             </div>
             <div class="slide-3">
-               <img src="img/slide3.png" width="759" height="411" alt="">
+               <img src="img/slide3.png" width="759" height="411" alt="Изображение на третьем слайде">
                 <b>Только ночь, только хардкор</b>
                 <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 <a href="#">Узнать больше</a>
             </div>
         </div>
         <section>
-            <h2>Скрытый заголовок для секции</h2>
+            <h2 class="visually-hidden">Скрытый заголовок для секции</h2>
             <ul>
                 <li>
                     <img src="img/adv-1.png" width="300" height="146" alt="Компьютер с сайтом">   
@@ -93,7 +94,7 @@
             </ul>
         </section>
         <section>
-            <h2>Партнеры (скрытый заголовок)</h2>
+            <h2 class="visually-hidden">Партнеры</h2>
             <ul>
                 <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-ac.png" width="199" height="68" alt="HTML Academy"></a></li>
                 <li><a href="#"><img src="img/boroda.png" width="209" height="87" alt="Барбершоп"></a></li>
@@ -114,13 +115,34 @@
         </div>
         <div>
             <ul>
-                <li><a href="#"><img src="img/vk-icon.svg" alt="ВК"></a></li>
-                <li><a href="#"><img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-                <li><a href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+                <li><a href="#" aria-label="Nerds во Вконтакте"><img src="img/vk-icon.svg" alt="ВК"></a></li>
+                <li><a href="#" aria-label="Nerds в Фэйсбуке"><img src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
+                <li><a href="#" aria-label="Nerds в Инстаграме"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
             </ul>
             <b>Давайте дружить, это выгодно!</b>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+    <div>
+        <h1>Напишите нам</h1>
+        <button>
+            <img src="img/close-cross.svg" width="21" height="21" alt="Кнопка закрытия окна">
+        </button>    
+        <form action="" method="post">
+            <p>
+                <label for="user-name">Ваше имя:</label>
+                <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+                <label for="user-email">Ваш e-mail:</label>
+                <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="letter">Текст письма:</label>
+                <textarea name="letter" id="letter" cols="50" rows="5">В свободной форме</textarea>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
   </body>
 </html>
