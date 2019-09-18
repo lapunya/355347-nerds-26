@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto", Arial, sans-serif;
+    
+    background-color: white;
+}
+
+/*Шапка сайта*/
+
+.header {
+    background-color: #eeeeee;
+}
+
+.navigation a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation a:hover {
+    color: #fb565a;
+}
+
+.navigation a:active {
+    color: #a6a6a6;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.current-page {
+    border-bottom: 4.56px solid #fb565a;
+}
+
+/*Слайдер*/
+
+.slide-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: bold;
+}
+
+.slide-btn:hover {
+    background-color: #e74246;
+}
+
+.slide-btn:active {
+    background-color: #d7373b;
+}
+
+.slider p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*Список с картинками и кнопками*/
+
+.product-list {
+    list-style: none;
+}
+
+.product-list-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.product-list-item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+}
+
+.product-list-item .button,
+.slider .button {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
+
+.slide-btn {
+    background-color: #fb565a;
+}
+
+.product-list-item .button-1 {
+    background-color: #fb565a;
+    border-radius: 5px;
+}
+
+.product-list-item .button-2 {
+    background-color: #00ca74;
+    border-radius: 5px;
+}
+
+.product-list-item .button-3 {
+    background-color: #efc84a;
+    border-radius: 5px;
+}
+
+/*Секция Мы маленькая, но гордая...*/
+
+.advantages h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.advantages p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accuracy h3,
+.advanteges h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.percent-list {
+    list-style: none;
+}
+
+.percent-list b {
+    font-size: 45px;
+    line-height: 10.06px;
+    
+}
+
+.percent-list span {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/*Секция Партнеры*/
+
+.partner-list {
+    list-style: none;
+}
+
+.partner-academy {
+    background-image: url(../img/html-ac.png);
+    width: 199px;
+    height: 68px;
+    display: block;
+}
+
+.partner-academy:hover {
+    background-image: url(../img/html-ac-hover.png);
+}
+
+.partner-academy:active {
+    background-image: url(../img/html-ac-active.png);
+}
+
+
+
+/*Футер*/
+
+.social-list {
+    list-style: none;
+}
+
+.social-list a {
+    background-color: #e1e1e1;
+}
+
+.social-list a:hover {
+    background-color: #e74246;
+}
+
+.social-list a:active {
+    background-color: #d7373b;
+}
+
+
+
+
+
+
+
+
