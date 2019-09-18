@@ -1,16 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
-    
-    font-family: "Roboto", Arial, sans-serif;
-    
+    font-family: "Roboto", "Arial", sans-serif;
     background-color: white;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+}
 /*Шапка сайта*/
 
 .header {
     background-color: #eeeeee;
+}
+
+.header-logo:hover {
+    opacity: 0.8;
+}
+
+.header-logo:active {
+    opacity: 0.3;
 }
 
 .navigation a {
@@ -35,7 +61,7 @@ body {
 }
 
 .current-page {
-    border-bottom: 4.56px solid #fb565a;
+    border-bottom: 2px solid #fb565a;
 }
 
 /*Слайдер*/
@@ -46,17 +72,25 @@ body {
     font-weight: bold;
 }
 
+.slider p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+}
+
+.slide-btn {
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #fb565a;
+}
+
 .slide-btn:hover {
     background-color: #e74246;
 }
 
 .slide-btn:active {
     background-color: #d7373b;
-}
-
-.slider p {
-    font-size: 16px;
-    line-height: 24px;
+    color:rgba(255, 255, 255, 0.3);
 }
 
 /*Список с картинками и кнопками*/
@@ -68,7 +102,6 @@ body {
 .product-list-item h3 {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
 }
 
 .product-list-item p {
@@ -85,43 +118,61 @@ body {
     color: white;
 }
 
-.slide-btn {
+.product-list-item .button-1 {
     background-color: #fb565a;
 }
 
-.product-list-item .button-1 {
-    background-color: #fb565a;
-    border-radius: 5px;
+.product-list-item .button-1:hover {
+    background-color: #e74246;
+}
+
+.product-list-item .button-1:active {
+    background-color: #d7373b;
+    color:rgba(255, 255, 255, 0.3);
 }
 
 .product-list-item .button-2 {
     background-color: #00ca74;
-    border-radius: 5px;
+}
+
+.product-list-item .button-2:hover {
+    background-color: #00bc6c;
+}
+
+.product-list-item .button-2:active {
+    background-color: #00aa62;
+    color:rgba(255, 255, 255, 0.3);
 }
 
 .product-list-item .button-3 {
     background-color: #efc84a;
-    border-radius: 5px;
 }
 
+.product-list-item .button-3:hover {
+    background-color: #eab534;
+}
+
+.product-list-item .button-3:active {
+    background-color: #e5a722;
+    color:rgba(255, 255, 255, 0.3);
+}
 /*Секция Мы маленькая, но гордая...*/
 
 .advantages h2 {
     font-size: 45px;
     line-height: 45px;
-    font-weight: bold;
 }
 
+.accuracy h3,
+.advanteges h3,
 .advantages p {
     font-size: 16px;
     line-height: 24px;
 }
 
-.accuracy h3,
-.advanteges h3 {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
+.advantages p,
+.percent-list span {
+    color: #283136;
 }
 
 .percent-list {
@@ -130,7 +181,7 @@ body {
 
 .percent-list b {
     font-size: 45px;
-    line-height: 10.06px;
+    line-height: 10px;
     
 }
 
@@ -145,19 +196,17 @@ body {
     list-style: none;
 }
 
-.partner-academy {
-    background-image: url(../img/html-ac.png);
-    width: 199px;
-    height: 68px;
-    display: block;
+.partner {
+    opacity: 0.2;
+    transition: opacity 0.2s ease;
 }
 
-.partner-academy:hover {
-    background-image: url(../img/html-ac-hover.png);
+.partner:hover {
+    opacity: 1;
 }
 
-.partner-academy:active {
-    background-image: url(../img/html-ac-active.png);
+.partner:active {
+    opacity: 0.1;
 }
 
 
@@ -179,11 +228,60 @@ body {
 .social-list a:active {
     background-color: #d7373b;
 }
+.social-list a:active img {
+    opacity: 0.3;
+}
+.contacts {
+    color: #666666
+}
 
+.contacts h2 {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
 
+.foot-btn {
+    background-color: #fb565a;
+}
 
+footer p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
 
+/*Стилизация каталога*/
 
+.catalog-title {
+    font-size: 55px;
+    line-height: 55px;
+    background-color: #eeeeee;
+}
 
+legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: black;
+}
 
+label {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+}
 
+.filter-btn {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.filter-btn:hover {
+    background-color: #dfdfdf;
+}
+
+.filter-btn:active {
+    background-color: #d5d5d5;
+    color: rgba(0, 0, 0, 0.3);
+}
