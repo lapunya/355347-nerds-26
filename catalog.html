@@ -35,7 +35,7 @@
            </fieldset>
            <fieldset>
                <legend>Сетка:</legend>
-               <ul>
+               <ul class="grid">
                     <li>
                         <input type="radio" name="grid-group" value="adaptive" id="radio-adaptive">
                         <label for="radio-adaptive">Адаптивная</label>
@@ -52,7 +52,7 @@
             </fieldset>
             <fieldset>
                 <legend>Особенности:</legend>
-                <ul>
+                <ul class="features">
                     <li>
                         <input type="checkbox" name="slider" id="filter-slider" checked>
                         <label for="filter-slider">Слайдер</label>
@@ -74,97 +74,97 @@
                         <label for="filter-cart">Корзина</label>
                     </li>
                 </ul>
-            </fieldset>
+            </fieldset> 
             <button type="submit" class="filter-btn">Показать</button>
         </form>
         <div>
             <b>Сортировать:</b>
-            <ul>
+            <ul class="sort">
                 <li><a href="">По цене</a></li>
                 <li><a href="">По типу</a></li>
                 <li><a href="">По названию</a></li>
             </ul>
-            <ul>
-                <li><a href=""><img src="img/icon-down-dir.svg" alt=""></a></li>
-                <li><a href=""><img src="img/icon-up-dir.svg" alt=""></a></li>
+            <ul class="up-down">
+                <li><a href="" class="sort-dir"><img src="img/icon-down-dir.svg" alt="Сортировка по убыванию"></a></li>
+                <li><a href="" class="sort-dir"><img src="img/icon-up-dir.svg" alt="Сортировка по возрастанию"></a></li>
             </ul>
         </div>
-        <section>
+        <section class="templates">
            <h2 class="visually-hidden">Шаблоны</h2>
-            <ul>
-                <li> 
+            <ul class="templates-list">
+                <li class="templates-list-item"> 
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-sedona.jpg" alt="Сайт Sedona">
                     </a>
-                    <div>
-                        <h3><a href="#">Sedona</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">Sedona</a></h3>
                         <p>Информационный сайт для туристов</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
-                <li>
+                <li class="templates-list-item">
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-pink.jpg" alt="Сайт Pink">
                     </a>
-                    <div>
-                        <h3><a href="#">Pink app</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">Pink app</a></h3>
                         <p>Продуктовый лендинг приложения для iOS и Android</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
-                <li>
+                <li class="templates-list-item">
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-barbershop.jpg" alt="Сайт Borodinsky">
                     </a>
-                    <div>
-                        <h3><a href="#">Barbershop</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">Barbershop</a></h3>
                         <p>Сайт салона красоты. Для мужчин, да.</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
-                <li>
+                <li class="templates-list-item">
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-mishka.jpg" alt="Сайт Mishka">
                     </a>
-                    <div>
-                        <h3><a href="#">Mishka</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">Mishka</a></h3>
                         <p>Интернет-магазин вязаных игрушек</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
-                <li>
+                <li class="templates-list-item">
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-aplus.jpg" alt="Сайт A+">
                     </a>
-                    <div>
-                        <h3><a href="#">A plus</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">A plus</a></h3>
                         <p>Лендинг курсов повышения квалификации</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
-                <li>
+                <li class="templates-list-item">
                     <a href="">
                         <img src="img/browser.svg" alt="">
                         <img src="img/img-kvast.jpg" alt="Сайт Кваст">
                     </a>
-                    <div>
-                        <h3><a href="#">Кваст</a></h3>
+                    <div class="template-popup">
+                        <h3><a href="#" class="template-name">Кваст</a></h3>
                         <p>Промо-сайт производителя крафтового кваса</p>
-                        <a href="#">9 900 РУБ.</a>
+                        <a href="#" class="button template-cost">9 900 РУБ.</a>
                     </div>
                 </li>
             </ul>
         </section>
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+        <ul class="pagination">
+            <li><a href="#" class="button pagination-btn">1</a></li>
+            <li><a href="#" class="button pagination-btn">2</a></li>
+            <li><a href="#" class="button pagination-btn">3</a></li>
+            <li><a href="#" class="button pagination-btn">Следующая</a></li>
         </ul>
     </main>
     <footer>

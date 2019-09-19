@@ -39,7 +39,9 @@ body {
     opacity: 0.3;
 }
 
-.navigation a {
+.navigation a,
+.template-name,
+.sort a{
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
@@ -48,12 +50,14 @@ body {
     text-transform: uppercase;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.template-name:hover {
     color: #fb565a;
 }
 
-.navigation a:active {
-    color: #a6a6a6;
+.navigation a:active,
+.template-name:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation ul {
@@ -79,8 +83,6 @@ body {
 }
 
 .slide-btn {
-    font-size: 16px;
-    line-height: 18px;
     background-color: #fb565a;
 }
 
@@ -265,23 +267,75 @@ legend {
     font-weight: bold;
     color: black;
 }
-
+.grid,
+.features,
+.sort,
+.up-down,
+.templates-list,
+.pagination {
+    list-style: none;
+}
 label {
     font-size: 16px;
     line-height: 20px;
     color: #283136;
 }
 
-.filter-btn {
+.filter-btn,
+.pagination-btn{
     background-color: #eeeeee;
     color: black;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.pagination-btn:hover {
     background-color: #dfdfdf;
 }
 
-.filter-btn:active {
+.filter-btn:active,
+.pagination-btn:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sort a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active {
+    color: rgba(0, 0, 0);
+}
+
+.sort-dir {
+    opacity: 0.3;
+}
+
+.sort-dir:hover {
+    opacity: 0.6;
+}
+
+.sort-dir:active {
+    opacity: 1;
+}
+
+.template-popup p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.template-cost {
+    background-color: #fb565a;
+}
+
+.template-cost:hover {
+    background-color: #e74246;
+}
+
+.template-cost:active {
+    background-color: #d7373b;
 }
