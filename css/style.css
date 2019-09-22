@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
+    
     background-color: white;
 }
 
@@ -41,12 +42,28 @@ body {
     background-color: #eeeeee;
 }
 
+.header-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 49px;
+}
+
 .header-logo:hover {
     opacity: 0.8;
 }
 
 .header-logo:active {
     opacity: 0.3;
+}
+
+.header-logo {
+    margin-right: 200px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .nav-btn {
@@ -68,6 +85,18 @@ body {
 
 .nav-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 46px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+    margin-left: 225px;
 }
 
 .current-page {
@@ -75,21 +104,43 @@ body {
 }
 
 /*Слайдер*/
+.slider {
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+    
+}
+.slide-container {
+    width: 1160px;
+    margin: 0 auto;
+    background-image: url(../img/slide1.png);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-top: 85px;
+    padding-bottom: 80px;
+}
 
 .slide-title {
     font-size: 55px;
     line-height: 55px;
     font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
 }
 
-.slider p {
+.slide-desc {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
+    margin-bottom: 44px;
 }
 
 .slide-btn {
     background-color: #fb565a;
+    display: inline-block;
+    padding: 19px 55px;
+    text-align: center;
+    border-radius: 2px;
 }
 
 .slide-btn:hover {
@@ -103,19 +154,49 @@ body {
 
 /*Список с картинками и кнопками*/
 
+.products {
+    
+}
+
 .products-list {
+    padding-left: 0;
     list-style: none;
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.products-item {
+    margin-right: 100px;
+}
+
+.products-item:last-child {
+    margin-right: 60px;
+}
+
+.product-image {
+    margin-bottom: 26px;
+    display: block;
 }
 
 .products-title {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 26px;
 }
 
-.products-item p {
+.products-desc {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
+    margin-bottom: 100px;
+}
+
+.products-btn {
+   padding: 19px 39px; 
+   display: inline-block;
+   border-radius: 2px; 
 }
 
 .products-btn-1 {
@@ -158,30 +239,60 @@ body {
 }
 /*Секция Мы маленькая, но гордая...*/
 
-.advantages-title {
-    font-size: 45px;
-    line-height: 45px;
+.container-promo {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
 }
 
-.accuracy-title,
-.advanteges h3 {
+.advantages {
+    margin-right: 146px;
+}
+
+.promo-title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 35px;
+}
+
+
+.advanteges-title {
     font-size: 16px;
     line-height: 24px;
+}
+
+.accuracy-title {
+    font-size: 16px;
+    line-height: 24px; 
+    margin-bottom: 49px;
 }
 
 .advantages-description {
     font-size: 16px;
     line-height: 24px;
     color: #283136;
+    margin-bottom: 47px;
+}
+
+.advantages-list {
+    list-style: none;
 }
 
 .percent-list {
     list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.percent-item {
+    margin-right: 25px;
 }
 
 .percent-number {
+    display: block;
     font-size: 45px;
     line-height: 10px;
+    margin-bottom: 30px;
 }
 
 .percent-description {
@@ -431,3 +542,4 @@ label {
 .close-btn:active {
     opacity: 0.1;
 }
+
