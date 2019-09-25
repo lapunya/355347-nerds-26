@@ -374,11 +374,22 @@ body {
 .contacts {
     display: inline-block;
     padding: 50px;
+    position: absolute;
+    top: 55px;
+    left: 140px;
     background-color: #ffffff;
+}
+
+.marker-image {
+    position: absolute;
+    left: 820px;
+    bottom: 137px;
 }
 
 .social-list {
     list-style: none;
+    display: flex;
+    align-items: baseline;
 }
 
 .social-btn {
@@ -431,7 +442,12 @@ body {
     border-radius: 2px;
 }
 
-.lets-friend {
+.footer-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.friends-title {
     font-size: 36px;
     line-height: 36px;
 }
@@ -444,10 +460,27 @@ body {
 
 /*Стилизация каталога*/
 
+
 .catalog-title {
     font-size: 55px;
     line-height: 55px;
     background-color: #eeeeee;
+}
+
+.main-container {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-side-wrap {
+    width: 260px;
+    margin-right: 140px;
+}
+
+.cost {
+    border: none;
+    padding: 0;
 }
 
 .cost-title {
@@ -455,6 +488,11 @@ body {
     line-height: 30px;
     font-weight: bold;
     color: black;
+}
+
+.filter-grid {
+    border: none;
+    padding: 0;
 }
 
 .filter-grid-title {
@@ -466,6 +504,10 @@ body {
 
 .filter-grid-list {
     list-style: none;
+}
+
+.features {
+    border: none;
 }
 
 .features-title{
@@ -550,6 +592,50 @@ label {
 .sort-dir:active {
     opacity: 1;
 }
+
+.templates-list {
+    width: 760px;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.templates-item {
+    display: inline-block;
+    margin-bottom: 33px;
+    padding-left: 0;
+    margin-right: 36px;
+    position: relative;
+}
+
+.templates-item:nth-child(even) {
+    margin-right: 0;
+}
+
+.template-popup {
+    background-color: #eeeeee;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.template-btn {
+    position: relative;
+}
+
+.template-btn::before {
+    content: "";
+    background-image: url(../img/browser.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -600px;
+    width: 360px;
+    height: 40px;
+}
+
+
 
 .template-name {
     font-size: 16px;

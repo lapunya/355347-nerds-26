@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header class="header">
-       <a class="header-logo" href="index.html">
+       <header class="header">
+      <div class="header-container">
+       <a class="header-logo" href="#">
                 <img class="header-image" src="img/logo.png" width="160" height="65" alt="Логотип Nerds">
         </a>
         <nav class="navigation" aria-label="Навигация по сайту">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-btn" href="">Студия</a></li>
                 <li class="nav-item"><a class="nav-btn" href="">Клиенты</a></li>
-                <li class="nav-item"><a class="nav-btn current-page" href="">Магазин</a></li>
+                <li class="nav-item"><a class="nav-btn current-page" href="catalog.html">Магазин</a></li>
                 <li class="nav-item"><a class="nav-btn" href="">Контакты</a></li>
                 <li class="nav-item"><a class="nav-btn" href=""><img src="img/cart-icon.svg" width="15" height="15" alt="Логотип корзины">Корзина</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     
     <main>
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-        
-        <form action="#" method="post">
+        <div class="main-container">
+        <div class="left-side-wrap">
+          <form action="#" method="post">
            <fieldset class="cost">
                <legend class="cost-title">Стоимость:</legend>
                <input type="range">
@@ -81,7 +84,8 @@
             </fieldset> 
             <button class="filter-btn" type="submit">Показать</button>
         </form>
-        
+        </div>
+        <div class="right-side-wrap">
         <div class="sort">
             <b class="sort-title">Сортировать:</b>
             <ul class="sort-list">
@@ -99,8 +103,7 @@
            <h2 class="visually-hidden">Шаблоны</h2>
             <ul class="templates-list">
                 <li class="templates-item"> 
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
                         <img class="template-image" src="img/img-sedona.jpg" alt="Сайт Sedona">
                     </a>
                     <div class="template-popup">
@@ -110,59 +113,59 @@
                     </div>
                 </li>
                 <li class="templates-item">
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
+                        
                         <img class="template-image" src="img/img-pink.jpg" alt="Сайт Pink">
                     </a>
-                    <div class="template-popup">
+                    <!--<div class="template-popup">
                         <h3 class="template-title"><a href="#" class="template-name">Pink app</a></h3>
                         <p> class="template-description"Продуктовый лендинг приложения для iOS и Android</p>
                         <a class="button template-cost" href="#">9 900 РУБ.</a>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="templates-item">
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
+                        
                         <img class="template-image" src="img/img-barbershop.jpg" alt="Сайт Borodinsky">
                     </a>
-                    <div class="template-popup">
+                    <!--<div class="template-popup">
                         <h3 class="template-title"><a href="#" class="template-name">Barbershop</a></h3>
                         <p class="template-description">Сайт салона красоты. Для мужчин, да.</p>
                         <a class="button template-cost" href="#">9 900 РУБ.</a>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="templates-item">
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
+                        
                         <img class="template-image" src="img/img-mishka.jpg" alt="Сайт Mishka">
                     </a>
-                    <div class="template-popup">
+                    <!--<div class="template-popup">
                         <h3 class="template-title"><a href="#" class="template-name">Mishka</a></h3>
                         <p class="template-description">Интернет-магазин вязаных игрушек</p>
                         <a class="button template-cost" href="#">9 900 РУБ.</a>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="templates-item">
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
+                        
                         <img class="template-image" src="img/img-aplus.jpg" alt="Сайт A+">
                     </a>
-                    <div class="template-popup">
+                    <!--<div class="template-popup">
                         <h3 class="template-title"><a href="#" class="template-name">A plus</a></h3>
                         <p class="template-description">Лендинг курсов повышения квалификации</p>
                         <a class="button template-cost" href="#">9 900 РУБ.</a>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="templates-item">
-                    <a href="">
-                        <img src="img/browser.svg" alt="">
+                    <a class="template-btn" href="">
+                        
                         <img class="template-image" src="img/img-kvast.jpg" alt="Сайт Кваст">
                     </a>
-                    <div class="template-popup">
+                    <!--<div class="template-popup">
                         <h3 class="template-title"><a href="#" class="template-name">Кваст</a></h3>
                         <p class="template-description">Промо-сайт производителя крафтового кваса</p>
                         <a class="button template-cost" href="#">9 900 РУБ.</a>
-                    </div>
+                    </div>-->
                 </li>
             </ul>
         </section>
@@ -172,11 +175,12 @@
             <li class="pagination-item"><a class="button pagination-btn" href="#">3</a></li>
             <li class="pagination-item"><a class="button pagination-btn" href="#">Следующая</a></li>
         </ul>
+        </div>
+        </div>
     </main>
     
     <footer>
-       <img src="img/map.png" width="1440" height="416" alt="Изображение карты">
-       <img src="img/map-marker.png" width="231" height="190" alt="Маркер на карте">
+      <div class="footer-map">
         <div class="contacts">
             <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
             <address class="contacts-address">191186, Санкт-Петербург,<br> 
@@ -184,15 +188,20 @@
             <span class="contacts-tel">тел. +7 (812) 275-75-75</span>
             <a class="button foot-btn" href="#">Напишите нам</a>
         </div>
-        <div>
-            <ul class="social-list">
-                <li><a class="social-btn" href="#"><img class="social-img" src="img/vk-icon.svg" alt="ВК"></a></li>
-                <li><a class="social-btn" href="#"><img class="social-img" src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-                <li><a class="social-btn" href="#"><img class="social-img" src="img/insta-icon.svg" alt="Инстаграм"></a></li>
-            </ul>
-            <b class="lets-friend">Давайте дружить, это выгодно!</b>
-            <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        <img class="marker-image" src="img/map-marker.png" width="231" height="190" alt="Маркер на карте">
         </div>
+        <div class="footer-container">
+            <ul class="social-list">
+                <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/vk-icon.svg" alt="ВК"></a></li>
+                <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
+                <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+            </ul>
+            <div class="friends">
+                <b class="friends-title">Давайте дружить, это выгодно!</b>
+                <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+        
     </footer>
     
     <div class="write-us">
