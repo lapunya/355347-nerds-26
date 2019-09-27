@@ -388,12 +388,20 @@ body {
 
 .social-list {
     list-style: none;
-    display: flex;
-    align-items: baseline;
+    display: inline-flex;
+    width: 261px;
+    padding: 0;
+    justify-content: space-between;
 }
 
 .social-btn {
     background-color: #e1e1e1;
+    border-radius: 50%;    
+    display: flex;
+    width: 79px;
+    height: 79px;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-btn:hover {
@@ -504,13 +512,14 @@ body {
 
 .filter-grid-list {
     list-style: none;
+    padding: 0;
 }
 
 .features {
     border: none;
 }
 
-.features-title{
+.features-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -518,6 +527,7 @@ body {
 }
 .features-list {
     list-style: none;
+    padding: 0;
 }
 
 .sort-title {
@@ -602,10 +612,12 @@ label {
 
 .templates-item {
     display: inline-block;
-    margin-bottom: 33px;
+    padding-top: 40px;
     padding-left: 0;
     margin-right: 36px;
+    margin-bottom: 33px;
     position: relative;
+    width: 360px;
 }
 
 .templates-item:nth-child(even) {
@@ -615,10 +627,15 @@ label {
 .template-popup {
     background-color: #eeeeee;
     width: 100%;
-    display: block;
     position: absolute;
-    bottom: 10px;
-    z-index: 10;
+    text-align: center;
+    padding-top: 35px;
+    bottom: 0;
+    display: none;
+}
+
+.templates-item:hover .template-popup {
+    display: block;
 }
 
 .template-btn {
@@ -629,13 +646,21 @@ label {
     content: "";
     background-image: url(../img/browser.svg);
     background-repeat: no-repeat;
+    opacity: 0.12;
     position: absolute;
     top: -600px;
     width: 360px;
     height: 40px;
 }
 
+.templates-item:hover .template-btn::before {
+    opacity: 1;
+}
 
+.template-title {
+    margin: 0;
+    margin-bottom: 25px;
+}
 
 .template-name {
     font-size: 16px;
@@ -658,10 +683,16 @@ label {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .template-cost {
+    display: inline-block;
     background-color: #fb565a;
+    padding: 19px 61px;
+    margin-bottom: 43px;
+    border-radius: 2px;
 }
 
 .template-cost:hover {
