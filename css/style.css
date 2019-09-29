@@ -365,57 +365,20 @@ body {
 
 .footer-map {
     min-height: 416px;
-    padding-top: 54px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 130px;
+    margin-bottom: 70px;
     background-image: url(../img/map.png);
-    background-size: 1440px 416px;
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
 }
 
 .contacts {
-    display: inline-block;
     padding: 50px;
-    position: absolute;
-    top: 55px;
-    left: 140px;
-    background-color: #ffffff;
-}
-
-.marker-image {
-    position: absolute;
-    left: 820px;
-    bottom: 137px;
-}
-
-.social-list {
-    list-style: none;
-    display: inline-flex;
-    width: 261px;
-    padding: 0;
-    justify-content: space-between;
-}
-
-.social-btn {
-    background-color: #e1e1e1;
-    border-radius: 50%;    
-    display: flex;
-    width: 79px;
-    height: 79px;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-btn:hover {
-    background-color: #e74246;
-}
-
-.social-btn:active {
-    background-color: #d7373b;
-}
-.social-btn:active .social-image {
-    opacity: 0.3;
-}
-.contacts {
     display: inline-block;
+    background-color: #ffffff;
     color: #666666;
 }
 
@@ -450,9 +413,50 @@ body {
     border-radius: 2px;
 }
 
+.marker-image {
+    position: absolute;
+    left: 820px;
+    bottom: 137px;
+}
+
 .footer-container {
     width: 1160px;
     margin: 0 auto;
+}
+
+.social-list {
+    list-style: none;
+    display: inline-flex;
+    width: 261px;
+    padding: 0;
+    margin: 0;
+    margin-right: 140px;
+    justify-content: space-between;
+}
+
+.social-btn {
+    background-color: #e1e1e1;
+    border-radius: 50%;    
+    display: flex;
+    width: 79px;
+    height: 79px;
+    justify-content: center;
+    
+}
+
+.social-btn:hover {
+    background-color: #e74246;
+}
+
+.social-btn:active {
+    background-color: #d7373b;
+}
+.social-btn:active .social-image {
+    opacity: 0.3;
+}
+
+.friends {
+    display: inline-block;
 }
 
 .friends-title {
@@ -473,6 +477,11 @@ body {
     font-size: 55px;
     line-height: 55px;
     background-color: #eeeeee;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 63px;
+    padding-top: 86px;
+    padding-bottom: 115px;
 }
 
 .main-container {
@@ -500,7 +509,6 @@ body {
 
 .filter-grid {
     border: none;
-    padding: 0;
 }
 
 .filter-grid-title {
@@ -513,6 +521,53 @@ body {
 .filter-grid-list {
     list-style: none;
     padding: 0;
+    padding-left: 38px;
+}
+
+.filter-grid-item {
+    margin-bottom: 30px;
+}
+
+.radio {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+.lab-radio {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    position: relative;
+}
+
+.lab-radio::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -38px;
+    top: -2px;
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.radio:checked + .lab-radio::before {
+    background-image: url(../img/radio-on.svg);
+}
+
+.radio:hover + .lab-radio::before {
+    opacity: 1;
+}
+
+.radio:disabled + .lab-radio {
+    opacity: 0.1;
+}
+
+.radio:focus + .lab-radio {
+    text-decoration: underline;
 }
 
 .features {
@@ -525,9 +580,57 @@ body {
     font-weight: bold;
     color: black;
 }
+
 .features-list {
     list-style: none;
     padding: 0;
+    padding-left: 38px;
+}
+
+.features-item {
+    margin-bottom: 30px;
+}
+
+.check {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+.lab-check {
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    position: relative;
+}
+
+.lab-check::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -38px;
+    top: -2px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.check:checked + .lab-check::before {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.check:hover + .lab-check::before {
+    opacity: 1;
+}
+
+.check:disabled + .lab-check {
+    opacity: 0.1;
+}
+
+.check:focus + .lab-check {
+    text-decoration: underline;
 }
 
 .sort-title {
