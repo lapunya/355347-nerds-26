@@ -32,8 +32,10 @@ body {
 
 .button {
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 500;
     color: white;
 }
 /*Шапка сайта*/
@@ -103,6 +105,20 @@ body {
     border-bottom: 2px solid #fb565a;
 }
 
+.cart-btn {
+    position: relative;
+}
+
+.cart-btn::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -26px;
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+}
+
 /*Слайдер*/
 .slider {
     background-color: #eeeeee;
@@ -150,6 +166,7 @@ body {
 .slide-btn:active {
     background-color: #d7373b;
     color:rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /*Список с картинками и кнопками*/
@@ -210,7 +227,8 @@ body {
 
 .products-btn-1:active {
     background-color: #d7373b;
-    color:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .products-btn-2 {
@@ -223,7 +241,8 @@ body {
 
 .products-btn-2:active {
     background-color: #00aa62;
-    color:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .products-btn-3 {
@@ -237,6 +256,7 @@ body {
 .products-btn-3:active {
     background-color: #e5a722;
     color:rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 /*Секция Мы маленькая, но гордая...*/
 
@@ -253,24 +273,30 @@ body {
 }
 
 .advantages {
-    margin-right: 146px;
+    margin-right: 149px;
 }
 
 .promo-title {
     font-size: 45px;
     line-height: 45px;
+    margin-top: 40px;
     margin-bottom: 35px;
+    font-weight: 500;
+    width: 650px;
 }
-
 
 .advanteges-title {
     font-size: 16px;
     line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .accuracy-title {
     font-size: 16px;
     line-height: 24px; 
+    margin: 0;
     margin-bottom: 49px;
 }
 
@@ -283,6 +309,35 @@ body {
 
 .advantages-list {
     list-style: none;
+    padding: 0;
+}
+
+.advantages-item {
+    font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    position: relative;
+    margin-left: 36px;
+    margin-bottom: 40px;
+}
+
+.advantages-item:last-child {
+    margin-bottom: 0;
+}
+
+.advantages-item::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+    left: -36px;
+    top: 11px;
+    
+}
+
+.nerds-image {
+    margin-bottom: 40px;
 }
 
 .percent-list {
@@ -367,7 +422,6 @@ body {
     min-height: 416px;
     padding-top: 55px;
     padding-bottom: 55px;
-    padding-left: 130px;
     margin-bottom: 70px;
     background-image: url(../img/map.png);
     background-size: contain;
@@ -375,11 +429,16 @@ body {
     position: relative;
 }
 
+.contacts-container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
 .contacts {
-    padding: 50px;
     display: inline-block;
     background-color: #ffffff;
     color: #666666;
+    padding: 50px;
 }
 
 .contacts-title {
