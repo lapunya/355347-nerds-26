@@ -32,11 +32,19 @@
           <form action="#" method="post">
            <fieldset class="cost">
                <legend class="cost-title">Стоимость:</legend>
-               <input type="range">
-               <label for="range-from">От</label>
-               <input type="text" value="0" id="range-from">
-               <label for="range-to">До</label>
-               <input type="text" value="15 000" id="range-to">
+               <div class="filter-range">
+                   <div class="range-controls">
+                       <div class="scale">
+                           <div class="bar"></div>
+                       </div>
+                       <div class="toggle toggle-min"></div>
+                       <div class="toggle toggle-max"></div>
+                   </div>
+                   <div class="price-controls">
+                       <label class="lab-from">от<input class="price-input" name="min-price" type="text" value="0"></label>
+                       <label class="lab-to">до<input class="price-input" name="max-price" type="text" value="15000"></label>
+                   </div>
+               </div>
            </fieldset>
            
            <fieldset class="filter-grid">

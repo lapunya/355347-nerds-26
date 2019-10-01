@@ -557,6 +557,7 @@ body {
 .cost {
     border: none;
     padding: 0;
+    margin: 0;
 }
 
 .cost-title {
@@ -564,6 +565,83 @@ body {
     line-height: 30px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
+}
+
+.filter-range {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.scale {
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.bar {
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.toggle {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    background-color: #ababab;
+    /*border: 8px solid white;*/
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toggle-min {
+    left: 18px;
+}
+
+.toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.lab-from,
+.lab-to {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.lab-to {
+    text-align: right;
+}
+
+.price-input {
+    width: 80px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 5px;
 }
 
 .filter-grid {
@@ -575,6 +653,7 @@ body {
     line-height: 30px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
 }
 
 .filter-grid-list {
@@ -638,6 +717,7 @@ body {
     line-height: 30px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
 }
 
 .features-list {
@@ -719,10 +799,21 @@ label {
     color: #283136;
 }
 
-.filter-btn,
-.pagination-btn{
+.pagination-btn {
     background-color: #eeeeee;
     color: black;
+}
+
+.filter-btn {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #eeeeee;
+    padding: 19px 88px;
+    border: none;
+    border-radius: 2px;
 }
 
 .filter-btn:hover,
