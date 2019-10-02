@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-       <header class="header">
+    <header class="header">
       <div class="header-container">
-       <a class="header-logo" href="#">
+       <a class="header-logo" href="index.html">
                 <img class="header-image" src="img/logo.png" width="160" height="65" alt="Логотип Nerds">
         </a>
         <nav class="navigation" aria-label="Навигация по сайту">
@@ -25,7 +25,7 @@
         </div>
     </header>
     
-    <main>
+    <main class="catalog-main">
         <h1 class="catalog-title">Магазин готовых шаблонов</h1>
         <div class="main-container">
         <div class="left-side-wrap">
@@ -174,24 +174,26 @@
                 </li>
             </ul>
             
-        <ul class="pagination">
-            <li class="pagination-item"><a class="button pagination-btn" href="#">1</a></li>
-            <li class="pagination-item"><a class="button pagination-btn" href="#">2</a></li>
-            <li class="pagination-item"><a class="button pagination-btn" href="#">3</a></li>
-            <li class="pagination-item"><a class="button pagination-btn" href="#">Следующая</a></li>
-        </ul>
+        <div class="pagination">
+            <a class="button pagination-btn" href="#">1</a>
+            <a class="button pagination-btn" href="#">2</a>
+            <a class="button pagination-btn" href="#">3</a>
+            <a class="button pagination-btn" href="#">Следующая</a>
+        </div>
         </div>
         </div>
     </main>
     
     <footer>
       <div class="footer-map">
-        <div class="contacts">
+        <div class="contacts-container">
+           <div class="contacts">
             <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
             <address class="contacts-address">191186, Санкт-Петербург,<br> 
             ул. Б. Конюшенная, д. 19/8</address>
             <span class="contacts-tel">тел. +7 (812) 275-75-75</span>
             <a class="button foot-btn" href="#">Напишите нам</a>
+        </div>
         </div>
         <img class="marker-image" src="img/map-marker.png" width="231" height="190" alt="Маркер на карте">
         </div>

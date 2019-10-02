@@ -419,12 +419,11 @@ body {
 /*Футер*/
 
 .footer-map {
-    min-height: 416px;
     padding-top: 55px;
     padding-bottom: 55px;
     margin-bottom: 70px;
     background-image: url(../img/map.png);
-    background-size: contain;
+    background-size: 1440px 416px;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -444,7 +443,7 @@ body {
 .contacts-title {
     font-size: 18px;
     line-height: 30px;
-    margin-top: 0;
+    margin: 0;
     color: black;
     margin-bottom: 35px;
 }
@@ -561,6 +560,7 @@ body {
 }
 
 .cost-title {
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -571,6 +571,7 @@ body {
 .filter-range {
     width: 260px;
     margin-top: 49px;
+    margin-bottom: 62px;
 }
 
 .range-controls {
@@ -590,19 +591,20 @@ body {
 }
 
 .bar {
+    width: 70%;
     height: 2px;
     background-color: #00ca74;
 }
 
 .toggle {
     position: absolute;
-    top: 38px;
+    top: 30px;
     left: 0;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 20px;
     padding: 0;
     background-color: #ababab;
-    /*border: 8px solid white;*/
+    border: 8px solid white;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
@@ -772,17 +774,37 @@ body {
     text-decoration: underline;
 }
 
+.sort {
+    display: flex;
+}
+
 .sort-title {
+    display: inline-block;
     font-size: 18px;
     line-height: 18px;
+    margin-right: 267px;
+    text-transform: uppercase;
 }
 
 .sort-list {
     list-style: none;
+    width: 270px;
+    margin: 0;
+    margin-right: 48px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: space-between;
+    
 }
 
 .up-down-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    width: 40px;
+    justify-content: space-between;
+    
 }
 
 .templates-list {
@@ -791,6 +813,10 @@ body {
 
 .pagination {
     list-style: none;
+    padding: 0;
+    width: 445px;
+    display: flex; 
+    justify-content: space-between;
 }
 
 label {
@@ -802,6 +828,15 @@ label {
 .pagination-btn {
     background-color: #eeeeee;
     color: black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-btn:last-child {
+    width: 260px;
 }
 
 .filter-btn {
@@ -954,6 +989,10 @@ label {
 
 .template-cost:active {
     background-color: #d7373b;
+}
+
+.catalog-main {
+    margin-bottom: 60px;
 }
 
 /*Окно Напишите нам*/
