@@ -997,9 +997,61 @@ label {
 
 /*Окно Напишите нам*/
 
+.write-us {
+    width: 960px;
+    height: 590px;
+}
+
 .write-us h1 {
     font-size: 45px;
     line-height: 45px;
+    margin: 0;
+    display: inline-block;
+}
+
+.popup-container {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.popup-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.name {
+    flex-grow: 1;
+}
+
+.mail {
+    flex-grow: 1;
+}
+
+.message {
+    flex-grow: 2;
+}
+
+.lab-name {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.lab-mail {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.lab-message {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
 }
 
 .close-btn {

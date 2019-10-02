@@ -145,25 +145,27 @@
     </footer>
     
     <div class="write-us">
+        <div class="popup-container">
         <h1>Напишите нам</h1>
         <button class="close-btn">
             <img src="img/close-cross.svg" width="21" height="21" alt="Кнопка закрытия окна">
         </button>    
-        <form action="" method="post">
-            <p>
-                <label for="user-name">Ваше имя:</label>
+        <form class="popup-form" action="" method="post">
+            <div class="name">
+                <label class="lab-name" for="user-name">Ваше имя:</label>
                 <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-                <label for="user-email">Ваш e-mail:</label>
+            </div>
+            <div class="mail">
+                <label class="lab-mail" for="user-email">Ваш e-mail:</label>
                 <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-            </p>
-            <p>
-                <label for="letter">Текст письма:</label>
+            </div>
+            <div class="message">
+                <label class="lab-message" for="letter">Текст письма:</label>
                 <textarea name="letter" id="letter" cols="50" rows="5">В свободной форме</textarea>
-            </p>
-            <button type="submit">Отправить</button>
+            </div>
+            <button class="popup-btn" type="submit">Отправить</button>
         </form>
+        </div>
     </div>
   </body>
 </html>
