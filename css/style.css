@@ -511,6 +511,7 @@ body {
 }
 .social-btn:active .social-image {
     opacity: 0.3;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .friends {
@@ -860,6 +861,7 @@ label {
 .pagination-btn:active {
     background-color: #d5d5d5;
     color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 .sort-btn {
     font-size: 16px;
@@ -989,6 +991,7 @@ label {
 
 .template-cost:active {
     background-color: #d7373b;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .catalog-main {
@@ -998,20 +1001,24 @@ label {
 /*Окно Напишите нам*/
 
 .write-us {
+    display: none;
     width: 960px;
-    height: 590px;
+    padding-top: 73px;
+    padding-right: 100px;
+    padding-left: 100px;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
-.write-us h1 {
+.write-us-show {
+    display: block;
+}
+
+.popup-title {
     font-size: 45px;
     line-height: 45px;
     margin: 0;
+    margin-bottom: 56px;
     display: inline-block;
-}
-
-.popup-container {
-    width: 760px;
-    margin: 0 auto;
 }
 
 .popup-form {
@@ -1022,15 +1029,12 @@ label {
 }
 
 .name {
-    flex-grow: 1;
-}
-
-.mail {
-    flex-grow: 1;
+    margin-bottom: 36px;
 }
 
 .message {
-    flex-grow: 2;
+    width: 100%;
+    margin-bottom: 47px;
 }
 
 .lab-name {
@@ -1038,6 +1042,24 @@ label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.in-name {
+    width: 360px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+.in-name:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.in-name:focus {
+    border: 2px solid #000000;
 }
 
 .lab-mail {
@@ -1045,6 +1067,24 @@ label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.in-email {
+    width: 360px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+.in-email:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.in-email:focus {
+    border: 2px solid #000000;
 }
 
 .lab-message {
@@ -1052,10 +1092,31 @@ label {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.text-message {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 14px;
+    border: 2px solid #d7dcde;
+    border-radius: 5px;
+}
+
+.text-message:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.text-message:focus {
+    border: 2px solid #000000;
 }
 
 .close-btn {
+    padding: 0;
+    background-color: white;
+    border: none;
     opacity: 0.3;
+    float: right;
 }
 
 .close-btn:hover {
@@ -1066,3 +1127,15 @@ label {
     opacity: 0.1;
 }
 
+.popup-btn {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+    display: inline-block;
+    padding: 19px 85px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 84px;
+}
