@@ -97,7 +97,7 @@ body {
 
 .nav-item .current-page {
     border-bottom: 2px solid #fb565a;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     color: black;
 }
 
@@ -444,7 +444,7 @@ body {
 .footer-map {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
     background-image: url(../img/map.png);
     background-size: 1440px 416px;
     background-repeat: no-repeat;
@@ -560,11 +560,13 @@ body {
 .friends-title {
     font-size: 36px;
     line-height: 36px;
+    font-weight: 700;
 }
 
 .discount {
     font-size: 16px;
     line-height: 22px;
+    font-weight: 400;
     color: #444444;
     
 }
@@ -578,8 +580,8 @@ body {
     background-color: #eeeeee;
     text-align: center;
     margin: 0;
-    margin-bottom: 63px;
-    padding-top: 86px;
+    margin-bottom: 50px;
+    padding-top: 75px;
     padding-bottom: 115px;
 }
 
@@ -601,18 +603,17 @@ body {
 }
 
 .cost-title {
-    padding: 0;
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
     text-transform: uppercase;
 }
 
 .filter-range {
     width: 260px;
-    margin-top: 49px;
-    margin-bottom: 62px;
+    margin-top: 45px;
+    margin-bottom: 55px;
 }
 
 .range-controls {
@@ -677,24 +678,29 @@ body {
 
 .price-input {
     width: 80px;
-    padding: 8px 10px;
+    padding-top: 9px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 9px;
     margin-left: 10px;
     font-size: 16px;
     text-align: center;
     color: #283136;
     background-color: #eeeeee;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .filter-grid {
     border: none;
+    padding: 0;
+    margin-bottom: 25px;
 }
 
 .filter-grid-title {
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
     text-transform: uppercase;
 }
@@ -702,11 +708,11 @@ body {
 .filter-grid-list {
     list-style: none;
     padding: 0;
-    padding-left: 38px;
+    padding-left: 36px;
 }
 
 .filter-grid-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .radio {
@@ -728,8 +734,8 @@ body {
     width: 25px;
     height: 25px;
     position: absolute;
-    left: -38px;
-    top: -2px;
+    left: -36px;
+    top: -4px;
     background-image: url(../img/radio-off.svg);
     background-repeat: no-repeat;
     opacity: 0.3;
@@ -753,6 +759,7 @@ body {
 
 .features {
     border: none;
+    padding: 0;
 }
 
 .features-title {
@@ -766,11 +773,12 @@ body {
 .features-list {
     list-style: none;
     padding: 0;
-    padding-left: 38px;
+    padding-left: 36px;
+    margin-bottom: 47px;
 }
 
 .features-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .check {
@@ -792,7 +800,7 @@ body {
     width: 25px;
     height: 25px;
     position: absolute;
-    left: -38px;
+    left: -36px;
     top: -2px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
@@ -848,10 +856,6 @@ body {
     
 }
 
-.templates-list {
-    list-style: none;
-}
-
 .pagination {
     list-style: none;
     padding: 0;
@@ -888,9 +892,12 @@ label {
     text-transform: uppercase;
     font-weight: 500;
     background-color: #eeeeee;
-    padding: 19px 88px;
+    padding-top: 18px;
+    padding-right: 90px;
+    padding-bottom: 15px;
+    padding-left: 88px;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .filter-btn:hover,
@@ -953,9 +960,11 @@ label {
 
 .templates-list {
     width: 760px;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 33px;
+    list-style: none;
 }
 
 .templates-item {
@@ -963,7 +972,7 @@ label {
     padding-top: 40px;
     padding-left: 0;
     margin-right: 36px;
-    margin-bottom: 33px;
+    margin-bottom: 26px;
     position: relative;
     width: 360px;
 }
@@ -972,12 +981,16 @@ label {
     margin-right: 0;
 }
 
+.template-image {
+    border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
 .template-popup {
     background-color: #eeeeee;
     width: 100%;
     position: absolute;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 25px;
     bottom: 0;
     display: none;
 }
@@ -1010,7 +1023,7 @@ label {
     font-weight: 700;
     line-height: 30px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .template-name {
@@ -1043,9 +1056,12 @@ label {
 .template-cost {
     display: inline-block;
     background-color: #fb565a;
-    padding: 19px 61px;
+    padding-top: 18px;
+    padding-right: 60px;
+    padding-bottom: 18px;
+    padding-left: 61px;
     margin-bottom: 43px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .template-cost:hover {
