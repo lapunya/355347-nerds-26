@@ -128,12 +128,37 @@ body {
 .slide-container {
     width: 1160px;
     margin: 0 auto;
+    position: relative;
+}
+
+.slide-1 {
     background-image: url(../img/slide1.png);
     background-size: 698px 413px;
     background-position: 431px 14px;
     background-repeat: no-repeat;
     padding-top: 75px;
     padding-bottom: 80px;
+    display: none;
+}
+
+.slide-2 {
+    background-image: url(../img/slide2.png);
+    background-size: 663px 430px;
+    background-position: 496px 1px;
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    
+}
+
+.slide-3 {
+    background-image: url(../img/slide3.png);
+    background-size: 759px 411px;
+    background-position: 401px 15px;
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    display: none;
 }
 
 .slide-title {
@@ -170,6 +195,27 @@ body {
     background-color: #d7373b;
     color:rgba(255, 255, 255, 0.3);
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.switch {
+    display: inline-block;
+    position: absolute;
+    bottom: 93px;
+    left: 536px;
+}
+
+.round-btn {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.round-btn:last-child {
+    margin-right: 0;
+    margin-left: -1px;
 }
 
 /*Список с картинками и кнопками*/
@@ -537,7 +583,6 @@ body {
     width: 79px;
     height: 79px;
     justify-content: center;
-    
 }
 
 .social-btn:hover {
@@ -568,7 +613,6 @@ body {
     line-height: 22px;
     font-weight: 400;
     color: #444444;
-    
 }
 
 /*Стилизация каталога*/
