@@ -115,7 +115,7 @@ body {
 }
 
 .cart-btn::before {
-  content: "";
+  content: '';
   width: 15px;
   height: 15px;
   position: absolute;
@@ -149,19 +149,20 @@ body {
 .slide-1 {
   background-image: url('../img/slide1.png');
   background-size: 698px 413px;
-  background-position: 431px 14px;
+  background-position: 431px bottom;
 }
 
 .slide-2 {
   background-image: url('../img/slide2.png');
   background-size: 663px 430px;
-  background-position: 496px 1px;
+  background-position: 496px bottom;
+  padding-top: 78px;
 }
 
 .slide-3 {
   background-image: url('../img/slide3.png');
   background-size: 759px 411px;
-  background-position: 401px 15px;
+  background-position: 401px bottom;
 }
 
 .slide-active {
@@ -169,7 +170,7 @@ body {
 }
 
 .slide-title {
-  width: 514px;
+  width: 518px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -194,6 +195,7 @@ body {
   padding-left: 55px;
   text-align: center;
   border-radius: 3px;
+  vertical-align: top;
 }
 
 .slide-btn:hover {
@@ -211,6 +213,7 @@ body {
   position: absolute;
   bottom: 93px;
   left: 536px;
+  vertical-align: top;
 }
 
 .slider-control {
@@ -230,7 +233,7 @@ body {
 }
 
 .slider-control-active::before {
-  content: "";
+  content: '';
   display: block;
   width: 8px;
   height: 8px;
@@ -297,6 +300,7 @@ body {
   padding-left: 39px;
   display: inline-block;
   border-radius: 3px;
+  vertical-align: top;
 }
 
 .products-btn-1 {
@@ -414,7 +418,7 @@ body {
 }
 
 .advantages-item::before {
-  content: "";
+  content: '';
   width: 25px;
   height: 2px;
   background-color: #fb565a;
@@ -431,10 +435,12 @@ body {
   list-style: none;
   display: flex;
   padding-left: 0;
+  width: 362px;
 }
 
 .percent-item {
   margin-right: 19px;
+  width: 33.33%;
 }
 
 .percent-number {
@@ -443,6 +449,11 @@ body {
   line-height: 10px;
   font-weight: 700;
   margin-bottom: 35px;
+}
+
+.percent-number sup {
+  font-size: 28px;
+  top: -16px;
 }
 
 .percent-description {
@@ -474,7 +485,7 @@ body {
 }
 
 .partner-item::after {
-  content: "";
+  content: '';
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
@@ -487,6 +498,10 @@ body {
 .partner-item:nth-child(3) {
   margin-right: 121px;
   margin-left: 8px;
+}
+
+.partner-item:nth-child(3)::after {
+  right: -57px;
 }
 
 .partner-item:last-child::after {
@@ -514,7 +529,7 @@ body {
 
 .footer-map {
   margin-bottom: 70px;
-  background-image: url(../img/map.png);
+  background-image: url('../img/map.png');
   background-size: 1440px 416px;
   background-repeat: no-repeat;
   height: 415px;
@@ -529,6 +544,7 @@ body {
   position: absolute;
   left: 96px;
   top: 55px;
+  vertical-align: top;
 }
 
 .contacts-title {
@@ -555,6 +571,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  text-decoration: none;
 }
 
 .foot-btn {
@@ -565,6 +582,7 @@ body {
   padding-bottom: 14px;
   padding-left: 45px;
   border-radius: 3px;
+  vertical-align: top;
 }
 
 .foot-btn:hover {
@@ -590,6 +608,7 @@ body {
 .social-list {
   list-style: none;
   display: inline-flex;
+  vertical-align: top;
   width: 261px;
   padding: 0;
   margin: 0;
@@ -604,6 +623,7 @@ body {
   width: 79px;
   height: 79px;
   justify-content: center;
+  align-items: center;
 }
 
 .social-btn:hover {
@@ -622,12 +642,14 @@ body {
 .friends {
   display: inline-block;
   padding: 0;
+  vertical-align: top;
 }
 
 .friends-title {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 45px;
   font-weight: 700;
+
 }
 
 .discount {
@@ -635,6 +657,8 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #444444;
+  padding-top: 8px;
+  margin-top: 0;
 }
 
 /*Стилизация каталога*/
@@ -735,6 +759,7 @@ body {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
 .lab-to {
@@ -795,19 +820,19 @@ body {
 }
 
 .lab-radio::before {
-  content: "";
+  content: '';
   width: 25px;
   height: 25px;
   position: absolute;
   left: -36px;
   top: -4px;
-  background-image: url(../img/radio-off.svg);
+  background-image: url('../img/radio-off.svg');
   background-repeat: no-repeat;
   opacity: 0.3;
 }
 
 .radio:checked + .lab-radio::before {
-  background-image: url(../img/radio-on.svg);
+  background-image: url('../img/radio-on.svg');
 }
 
 .radio:hover + .lab-radio::before {
@@ -861,19 +886,19 @@ body {
 }
 
 .lab-check::before {
-  content: "";
+  content: '';
   width: 25px;
   height: 25px;
   position: absolute;
   left: -36px;
   top: -2px;
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
   opacity: 0.3;
 }
 
 .check:checked + .lab-check::before {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url('../img/checkbox-on.svg');
 }
 
 .check:hover + .lab-check::before {
@@ -898,6 +923,7 @@ body {
   line-height: 18px;
   margin-right: 267px;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
 .sort-list {
@@ -1005,14 +1031,15 @@ label {
   width: 11px;
   height: 10px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .sort-down {
-  background-image: url(../img/icon-down-dir.svg);
+  background-image: url('../img/icon-down-dir.svg');
 }
 
 .sort-up {
-  background-image: url(../img/icon-up-dir.svg);
+  background-image: url('../img/icon-up-dir.svg');
 }
 
 .sort-dir:hover {
@@ -1040,6 +1067,7 @@ label {
   margin-bottom: 29px;
   position: relative;
   width: 360px;
+  vertical-align: top;
 }
 
 .templates-item:nth-child(even) {
@@ -1060,12 +1088,16 @@ label {
   display: block;
 }
 
+.templates-item:focus-within .template-popup {
+  display: block;
+}
+
 .template-btn {
   position: relative;
 }
 
 .template-btn::before {
-  content: "";
+  content: '';
   background-image: url('../img/browser.svg');
   background-repeat: no-repeat;
   opacity: 0.12;
@@ -1076,6 +1108,10 @@ label {
 }
 
 .templates-item:hover .template-btn::before {
+  opacity: 1;
+}
+
+.templates-item:focus-within .template-btn::before {
   opacity: 1;
 }
 
@@ -1123,6 +1159,7 @@ label {
   padding-left: 61px;
   margin-bottom: 43px;
   border-radius: 3px;
+  vertical-align: top;
 }
 
 .template-cost:hover {
@@ -1164,6 +1201,7 @@ label {
   margin: 0;
   margin-bottom: 40px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .popup-form {
@@ -1290,6 +1328,7 @@ label {
   border-radius: 2px;
   margin-bottom: 84px;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .popup-btn:hover {

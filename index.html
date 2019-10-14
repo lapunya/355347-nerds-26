@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-container">
-      <a class="header-logo" href="#">
+      <a class="header-logo">
         <img class="header-image" src="img/logo.png" width="160" height="65" alt="Логотип Nerds">
       </a>
       <nav class="navigation" aria-label="Навигация по сайту">
@@ -123,18 +123,18 @@
 
   <footer class="footer">
     <div class="footer-map" id="map"></div>
-      <div class="contacts">
-        <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
-        <address class="contacts-address">191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</address>
-        <span class="contacts-tel">тел. +7 (812) 275-75-75</span>
-        <a class="button foot-btn" href="#">Напишите нам</a>
-      </div>
+    <div class="contacts">
+      <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
+      <address class="contacts-address">191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</address>
+      <a class="contacts-tel" href="tel:+78122757575" >тел. +7 (812) 275-75-75</a>
+      <a class="button foot-btn" href="#">Напишите нам</a>
+    </div>
     <div class="footer-container">
       <ul class="social-list">
-        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/vk-icon.svg" alt="ВК"></a></li>
-        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/fb-icon.svg" alt="Фэйсбук"></a></li>
-        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/vk-icon.svg" alt="ВК" width="26" height="15"></a></li>
+        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/fb-icon.svg" alt="Фэйсбук" width="12" height="22"></a></li>
+        <li class="social-item"><a class="social-btn" href="#"><img class="social-image" src="img/insta-icon.svg" alt="Инстаграм" width="21" height="21"></a></li>
       </ul>
       <div class="friends">
         <b class="friends-title">Давайте дружить, это выгодно!</b>
@@ -148,7 +148,7 @@
     <button class="close-btn">
       <img src="img/close-cross.svg" width="21" height="21" alt="Кнопка закрытия окна">
     </button>
-    <form class="popup-form" action="" method="post">
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="name">
         <label class="lab-name" for="user-name">Ваше имя:</label>
         <input class="in-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
@@ -164,6 +164,6 @@
       <button class="popup-btn" type="submit">Отправить</button>
     </form>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CaR8dNJJGN1QCsvrO_qbVPuEBsd-So&callback=initMap"></script>
 </body></html>

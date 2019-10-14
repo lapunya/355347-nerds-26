@@ -1,15 +1,17 @@
-var writeUs = document.querySelector(".foot-btn");
-var popup = document.querySelector(".write-us");
-var closeWriteUs = document.querySelector(".close-btn");
+'use strict';
 
-writeUs.addEventListener("click", function (evt) {
+var writeUs = document.querySelector('.foot-btn');
+var popup = document.querySelector('.write-us');
+var closeWriteUs = document.querySelector('.close-btn');
+
+writeUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.add("write-us-show");
+  popup.classList.add('write-us-show');
 });
 
-closeWriteUs.addEventListener("click", function (evt) {
+closeWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.remove("write-us-show");
+  popup.classList.remove('write-us-show');
 });
 
 if (document.querySelector('.slider')) {
@@ -54,7 +56,7 @@ var initMap = function () {
     animation: google.maps.Animation.BOUNCE,
     title: 'nerds',
     icon: {
-      url: "img/map-marker.png",
+      url: 'img/map-marker.png',
       scaledSize: new google.maps.Size(231, 190)
     }
   });
