@@ -254,9 +254,10 @@ body {
 
 .products-list {
   padding-left: 0;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   border-bottom: 2px solid #eeeeee;
@@ -266,9 +267,10 @@ body {
   padding-top: 171px;
   margin-right: 100px;
   width: 300px;
+  margin-bottom: 20px;
 }
 
-.products-item:last-child {
+.products-item:nth-child(3n) {
   margin-right: 60px;
 }
 
@@ -495,6 +497,7 @@ body {
   padding-left: 30px;
   border-bottom: 2px solid #eeeeee;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -502,6 +505,7 @@ body {
   position: relative;
   margin-right: 96px;
 }
+
 
 .partner-item::after {
   content: '';
@@ -523,7 +527,11 @@ body {
   right: -57px;
 }
 
-.partner-item:last-child::after {
+.partner-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.partner-item:nth-child(4n)::after {
   display: none;
 }
 
@@ -636,12 +644,13 @@ body {
 .social-list {
   list-style: none;
   display: inline-flex;
+  flex-wrap: wrap;
   vertical-align: top;
+  justify-content: space-between;
   width: 261px;
   padding: 0;
   margin: 0;
   margin-right: 135px;
-  justify-content: space-between;
 }
 
 .social-btn {
@@ -701,9 +710,9 @@ body {
   background-color: #eeeeee;
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 57px;
   padding-top: 75px;
-  padding-bottom: 115px;
+  padding-bottom: 108px;
 }
 
 .main-container {
@@ -965,6 +974,7 @@ body {
   margin-right: 48px;
   padding: 0;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
 }
@@ -1065,6 +1075,8 @@ body {
   height: 10px;
   display: inline-block;
   vertical-align: top;
+  position: relative;
+  top: 4px;
 }
 
 .sort-down {
@@ -1233,7 +1245,7 @@ body {
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(-50%);
+    transform: translateY(50%) translateX(-50%);
   }
 
   10%,
@@ -1241,14 +1253,14 @@ body {
   50%,
   70%,
   90% {
-    transform: translateX(-51%);
+    transform: translateY(50%) translateX(-51%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(-49%);
+    transform: translateY(50%) translateX(-49%);
   }
 }
 

@@ -1,5 +1,3 @@
-'use strict';
-
 var writeUs = document.querySelector('.foot-btn');
 var popup = document.querySelector('.write-us');
 var closeWriteUs = popup.querySelector('.close-btn');
@@ -15,16 +13,17 @@ writeUs.addEventListener('click', function (evt) {
 closeWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('write-us-show');
+  popup.classList.remove('write-us-error');
 });
 
 form.addEventListener('submit', function (evt) {
-  popup.classList.remove('write-us-error');
-  popup.offsetWidth = popup.offsetWidth;
   if (!inputName.value || !inputEmail.value) {
     evt.preventDefault();
+    popup.classList.remove('write-us-error');
+    popup.offsetWidth = popup.offsetWidth;
     popup.classList.add('write-us-error');
-  } 
-  });
+  }
+});
 
 if (document.querySelector('.slider')) {
   var slider = document.querySelector('.slider');
