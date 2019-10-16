@@ -2,7 +2,10 @@
 
 var writeUs = document.querySelector('.foot-btn');
 var popup = document.querySelector('.write-us');
-var closeWriteUs = document.querySelector('.close-btn');
+var closeWriteUs = popup.querySelector('.close-btn');
+var form = popup.querySelector('form');
+var inputName = form.querySelector('.in-name');
+var inputEmail = form.querySelector('.in-email');
 
 writeUs.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -13,6 +16,15 @@ closeWriteUs.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('write-us-show');
 });
+
+form.addEventListener('submit', function (evt) {
+  popup.classList.remove('write-us-error');
+  popup.offsetWidth = popup.offsetWidth;
+  if (!inputName.value || !inputEmail.value) {
+    evt.preventDefault();
+    popup.classList.add('write-us-error');
+  } 
+  });
 
 if (document.querySelector('.slider')) {
   var slider = document.querySelector('.slider');
